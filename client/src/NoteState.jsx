@@ -28,9 +28,6 @@ function NoteState(props) {
     });
 
     let result = await response.json();
-    if(!result.success){
-      toast.error(result.message,{autoClose:1500,position:"top-center"})
-    }
     setNotes(result["mynotes"]);
   }
 
