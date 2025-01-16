@@ -236,3 +236,31 @@
   background-color: rgb(8, 148, 8);
 }
 
+@media (max-width:600px) {
+    .Navbar h1{
+      font-size: 20px;
+    }
+
+    .container form{
+      width: 90%;
+      left: 50%;
+      height: 90%;
+    }
+
+    .container{
+      overflow-y: auto;
+    }
+
+    .container form .box{
+      height: 17%;
+    }
+    .Note-Container{
+      top: 130vh;
+      width: 90%;
+      left: 50%;
+      height: 90%;
+      margin-bottom: 5vh;
+    }
+    
+    
+}
