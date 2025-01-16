@@ -19,7 +19,7 @@ function NoteState(props) {
 
   // function to get notes
   async function getNotes() {
-    let response = await fetch("http://localhost:8050/notes/mynotes", {
+    let response = await fetch("https://e-notebook-server.onrender.com/notes/mynotes", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function NoteState(props) {
 
   //function to add new note
   async function addnewNote({ title, description, content }) {
-    let response = await fetch("http://localhost:8050/notes/mynotes/new", {
+    let response = await fetch("https://e-notebook-server.onrender.com/notes/mynotes/new", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ function NoteState(props) {
 
   //delete function
   async function deleteNote(id) {
-    let response = await fetch(`http://localhost:8050/notes/mynotes/${id}`, {
+    let response = await fetch(`https://e-notebook-server.onrender.com/notes/mynotes/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ function NoteState(props) {
 
   //update function
   async function updateNote(title, description, content, id) {
-    let response = await fetch(`http://localhost:8050/notes/mynotes/${id}`, {
+    let response = await fetch(`https://e-notebook-server.onrender.com/notes/mynotes/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

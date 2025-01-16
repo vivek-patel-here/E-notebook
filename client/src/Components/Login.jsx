@@ -24,7 +24,7 @@ function Login({ setIsAuthenticated }) {
       });
     }
     try {
-      const response = await fetch("http://localhost:8050/user/auth/login", {
+      const response = await fetch("https://e-notebook-server.onrender.com/user/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

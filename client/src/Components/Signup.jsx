@@ -25,7 +25,7 @@ function Signup() {
         return toast.error("All feilds are required!",{autoClose:3000,position:'top-center'});
     }
     try{
-        let response =await fetch("http://localhost:8050/user/auth/signup",{
+        let response =await fetch("https://e-notebook-server.onrender.com/user/auth/signup",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
