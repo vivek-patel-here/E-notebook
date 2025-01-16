@@ -1,0 +1,238 @@
+.Navbar {
+  padding: 0 2vw;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(8, 148, 8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar h1 {
+  color: white;
+}
+
+.Navbar nav > ul {
+  width: 50vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.Navbar ul > li {
+  list-style: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar ul button {
+  height: 5vh;
+  width: fit-content;
+  padding: 0px 2vw;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.Navbar ul button:hover {
+  background-color: rgb(8, 148, 8);
+  color: white;
+  border: 2px solid white;
+}
+
+.container {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("./assets/books-1845614_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.container form {
+  height: 75vh;
+  width: 30vw;
+  box-shadow: 3px 3px 10px rgb(1, 39, 63);
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container form h1 {
+  font-size: 2.5rem;
+}
+
+.container form .box {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.container .box > label {
+  font-size: 1.2rem;
+}
+
+.container .box > input {
+  height: 50%;
+  width: 100%;
+  padding-left: 1vw;
+  font-size: 1.1rem;
+}
+
+.container .box > textarea {
+  height: 70%;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.container form button {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(8, 148, 8);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.container span {
+  width: 100%;
+}
+
+.container span a {
+  color: rgb(8, 148, 8);
+}
+
+.Note-Container {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  height: 90%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 5px 5px 10px rgb(4, 36, 66)
+
+}
+
+.Note-Container::-webkit-scrollbar{
+  display: none;
+  appearance: none;
+}
+
+.Note-Container > h2 {
+  width: 100%;
+  padding: 2vh 0px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgb(8, 148, 8);
+  text-align: center;
+}
+
+.Note {
+  height: fit-content;
+  width: 300px;
+  border: 1px solid #cecece;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2vh 0px;
+  text-align: center;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+
+.Note .btn-container{
+  display: flex;
+  width: fit-content;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Note:hover {
+  background-color: #cecece;
+}
+
+.InsideModal{
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+}
+
+.InsideModal .box{
+  width: 80%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.InsideModal .box textarea{
+  height: 50%;
+  width: 70%;
+  padding: 1vh 1vw;
+}
+
+
+.InsideModal .btn-box{
+  width: 45%;
+  height: 8%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+.InsideModal .btn-box > button{
+  height: 100%;
+  width: fit-content;
+  padding: 1vh 1vw;
+  background-color: rgb(255, 63, 63);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.btn-box > button:nth-of-type(1){
+  background-color: rgb(8, 148, 8);
+}
+
